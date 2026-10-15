@@ -1,0 +1,5 @@
+# Semua permintaan diarahkan ke folder public/ supaya app/, config/,
+# database/, storage/ dan .env tidak bisa dibuka lewat browser.
+RewriteEngine On
+RewriteRule ^$ public/ [L]
+RewriteRule ^(?!public/)(.*)$ public/$1 [L]

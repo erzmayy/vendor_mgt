@@ -1,0 +1,8 @@
+.env
+storage/uploads/*
+storage/logs/*
+!storage/uploads/.gitkeep
+!storage/logs/.gitkeep
+# Dump dari sistem asli tidak boleh masuk repository
+*.sql.bak
+**/siap_*.sql
